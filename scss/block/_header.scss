@@ -1,0 +1,43 @@
+.header__list {
+    display: none;
+}
+
+.header__menu {
+    background-repeat: no-repeat;
+    border: none;
+    background-image: url(/images/menu.svg);
+    width: 17px;
+    height: 17px;
+}
+
+.header__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-bottom: 41px;
+}
+
+@media screen and (min-width:768px) {
+    .header__list {
+        display: block;
+        display: flex;
+        gap: 30px;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .header__item {
+        color: rgb(131, 136, 143);
+        font-family: Barlow;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 0.92px;
+        text-align: left;
+        opacity: 0.6  ;
+        text-transform: uppercase;
+    }
+}

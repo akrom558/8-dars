@@ -1,0 +1,631 @@
+/* fraunces-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/fraunces-v31-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* fraunces-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/fraunces-v31-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* fraunces-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/fraunces-v31-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* fraunces-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/fraunces-v31-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/barlow-v12-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/barlow-v12-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/barlow-v12-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/barlow-v12-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/barlow-v12-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/barlow-v12-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header__list {
+  display: none;
+}
+
+.header__menu {
+  background-repeat: no-repeat;
+  border: none;
+  background-image: url(/images/menu.svg);
+  width: 17px;
+  height: 17px;
+}
+
+.header__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 32px;
+  padding-bottom: 41px;
+}
+
+@media screen and (min-width: 768px) {
+  .header__list {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__item {
+    color: rgb(131, 136, 143);
+    font-family: Barlow;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0.92px;
+    text-align: left;
+    opacity: 0.6;
+    text-transform: uppercase;
+  }
+}
+.hero__block {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/images/hero-bg.svg);
+}
+
+.hero__title {
+  color: rgb(254, 252, 247);
+  font-family: Fraunces 9pt;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 22px;
+}
+
+.hero__text {
+  color: rgb(254, 252, 247);
+  font-family: Barlow;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: center;
+  opacity: 0.6;
+  padding-bottom: 136px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__block {
+    background-image: url(/images/hero-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .hero__title {
+    max-width: 400px;
+    font-size: 48px;
+    font-weight: 900;
+  }
+  .hero__text {
+    max-width: 400px;
+    padding-left: 60px;
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 992px) {
+  .hero__title {
+    font-size: 72px;
+    font-weight: 900;
+    max-width: 486px;
+    padding-bottom: 35px;
+    padding-top: 142px;
+  }
+  .hero__text {
+    max-width: 486px;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 190px;
+  }
+}
+.hero {
+  margin-bottom: 120px;
+}
+
+.cards__block {
+  background-color: rgb(44, 52, 62);
+  padding-left: 30px;
+  padding-right: 20px;
+}
+
+.cards__title {
+  padding-top: 25px;
+  color: rgb(253, 214, 186);
+  font-family: Fraunces 9pt;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 72px;
+  letter-spacing: 0px;
+  text-align: center;
+  padding-bottom: 24px;
+}
+
+.cards__box {
+  display: none;
+}
+
+.cards__sub_title {
+  color: rgb(255, 255, 255);
+  font-family: Fraunces 9pt;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: center;
+  padding-bottom: 24px;
+}
+
+.cards__text {
+  color: rgb(255, 255, 255);
+  font-family: Barlow;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: center;
+  padding-bottom: 56px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .cards__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
+  .cards__item {
+    max-width: 223px;
+  }
+  .cards__box {
+    max-width: 760px;
+    height: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 100px;
+    border-bottom: 2px solid rgb(253, 214, 186);
+  }
+  .cards__box .cards__span {
+    display: block;
+    width: 31px;
+    height: 31px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 2px solid #0e8784;
+    background-color: #fefcf7;
+    border-radius: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .cards__item {
+    max-width: 285px;
+  }
+  .cards__title {
+    text-align: left;
+  }
+  .cards__text {
+    text-align: left;
+    padding: 0;
+  }
+  .cards__sub_title {
+    text-align: left;
+  }
+}
+.coffee__sub_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.title__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 32px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.coffee__sub-list {
+  display: none;
+}
+
+.coffee {
+  margin-top: 111px;
+}
+
+.coffee__title {
+  color: rgb(131, 136, 143);
+  font-family: Fraunces 9pt;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 28px;
+}
+
+.coffee__content {
+  color: rgb(51, 61, 75);
+  font-family: Fraunces 9pt;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-top: 24px;
+  padding-bottom: 8px;
+  padding-left: 25px;
+}
+
+.coffee__text {
+  color: rgb(51, 61, 75);
+  font-family: Barlow;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-bottom: 24px;
+  padding-left: 25px;
+}
+
+.coffee__item_blok {
+  background-color: rgb(14, 135, 132);
+  margin-bottom: 16px;
+}
+
+.coffee__item {
+  background-color: rgb(244, 241, 235);
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .coffee__item {
+    max-width: 223px;
+  }
+  .cards__coffee {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+  }
+  .coffee__content {
+    font-size: 24px;
+    font-weight: 900;
+    padding-top: 32px;
+    padding-bottom: 24px;
+  }
+  .coffee__text {
+    font-size: 16px;
+    padding-bottom: 84px;
+    max-width: 172px;
+  }
+  .cards__coffee {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cards__coffee {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .coffee__sub-list {
+    display: block;
+    padding-top: 40px;
+  }
+  .coffee__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .coffee__sub_item {
+    gap: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.588);
+  }
+  .coffee__sub_title {
+    color: rgb(14, 135, 132);
+    font-family: Fraunces 9pt;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  .coffee__sub_text {
+    color: rgb(51, 61, 75);
+    font-family: Fraunces 9pt;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  .coffee__title {
+    font-size: 40px;
+  }
+  .lkiaufh {
+    max-width: 740px;
+  }
+  .title__block {
+    gap: 50px;
+  }
+}
+.box {
+  background-color: #2c343e;
+  margin-bottom: 88px;
+}
+
+.box__text {
+  color: rgb(255, 255, 255);
+  font-family: Barlow;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  text-transform: uppercase;
+  opacity: 0.5;
+  padding-top: 40px;
+  padding-bottom: 25px;
+  padding-left: 30px;
+}
+
+.box__title {
+  font-family: Fraunces 9pt;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-bottom: 40px;
+  padding-left: 30px;
+  color: #fff;
+}
+
+.box__color {
+  color: #0e8784;
+}
+
+.box__btn {
+  color: rgb(254, 252, 247);
+  font-family: Fraunces 9pt;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: center;
+  padding: 15px 30px;
+  border-radius: 6px;
+  border: none;
+  background-color: #0e8784;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .box {
+    max-width: 602px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .box {
+    max-width: 602px;
+    margin-right: auto;
+  }
+  .box__title {
+    font-size: 24px;
+    font-weight: 900;
+  }
+  .box__btn {
+    margin-right: auto;
+  }
+}
+.coffee {
+  margin-bottom: 120px;
+}
+
+.footer__block {
+  background-color: rgb(44, 52, 62);
+}
+
+.footer__logo {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 49px;
+  max-width: 225px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.footer__list {
+  text-align: center;
+}
+
+.footer__item {
+  padding-bottom: 24px;
+  color: rgb(131, 136, 143);
+  font-family: Barlow;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0.92px;
+  text-transform: uppercase;
+}
+
+.footer__link {
+  color: rgba(255, 255, 255, 0.8196078431);
+  opacity: 0.5;
+}
+
+.footer__list {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.footer__icon {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+    max-width: 283px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .footer__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}/*# sourceMappingURL=main.css.map */
